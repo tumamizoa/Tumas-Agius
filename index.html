@@ -228,11 +228,21 @@
   .hero-sub {
     max-width: 420px;
     color: var(--mid);
-    font-size: 0.72rem;
-    line-height: 1.8;
+    font-size: 0.76rem;
+    line-height: 1.6;
     letter-spacing: 0.04em;
     border-left: 1px solid var(--dark-mid);
     padding-left: 1.2rem;
+  }
+
+  .hero-sub-right {
+    max-width: 420px;
+    color: var(--mid);
+    font-size: 0.72rem;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+    border-right: 1px solid var(--dark-mid);
+    padding-right: 1.2rem;
   }
 
   .hero-meta {
@@ -245,6 +255,34 @@
     letter-spacing: 0.12em;
     text-transform: uppercase;
     line-height: 2;
+  }
+
+  .coming-soon-badge {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    z-index: 5;
+    background: rgba(37, 39, 37, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(200, 196, 188, 0.35);
+    border-radius: 999px;
+    padding: 0.5rem 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--paper);
+  }
+
+  .coming-soon-badge .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--paper);
+    animation: breathe 2.4s ease-in-out infinite;
   }
 
   .scroll-hint {
@@ -496,9 +534,10 @@
 
   .statement-body {
     color: var(--mid);
-    font-size: 0.72rem;
-    line-height: 1.9;
-    margin-bottom: 2rem;
+    font-size: 0.76rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: justify
   }
 
   .statement-meta {
@@ -820,6 +859,10 @@
   <div class="hero-bg"></div>
 
   <div class="hero-text-box" style="position:relative;z-index:2;">
+    <div class="coming-soon-badge">
+      <span class="dot"></span>
+      Coming soon
+    </div>
     <p class="hero-eyebrow">'26 Virtual Showcase — December 2026</p>
     <h1 class="hero-title">
       postfo<em>r<b>m<i>;</i></b></em><br>
@@ -839,18 +882,14 @@
     </p>
     <p class="statement-body" style="color:grey;">
       <br>
-      A transdisciplinary examination into the acceptable limitations of form. The following --- proposes a structure applicable to a post-certainty world....[<-- join sentences -->] as we continue to fall deeper into the inescapable [pull] of entropy, comfort [forever] slips [away from us], and the expectation we once had can no longer hold, thus comfort, we abandon in favour of a new form of distructure that only becomes increasingly chaotic with the passage of time.
+      A transdisciplinary examination into the acceptable limitations of contemporary form. The following thesis assumes that our continuous collapse into the inescapable expanse of entropy is embodied by a sense of collective discomfort, and proposes that an expressive structure applicable to a post-certainty world must abandon comfort in favour of a new wave of distructure that only becomes increasingly chaotic with the passage of time.
     </p>
   </div>
 
   <div class="hero-meta hero-meta-box" style="z-index:2;">
-    <p class="hero-sub">
-      Minolta Hi-Matic 7s<br>
-      Yashicaflex A2
-    </p><br>
-    <p class="hero-sub">
-      Ilford PAN-F Plus<br>
-      Eastman Kodak Double X
+    <p class="hero-sub-right">
+      [•~°} — Authentic Human Creation.<br>
+      No Artificial Intelligence.<br>No non-human animals.<br>No extraterrestrial beings.
     </p>
   </div>
 
@@ -931,23 +970,27 @@
   </div>
   <div class="statement-text">
     <p class="statement-label">Series — Urban Negative</p>
-    <blockquote class="statement-quote">"The city reveals itself in the spaces nobody frames."</blockquote>
+    <blockquote class="statement-quote">"Passage of time"</blockquote>
     <p class="statement-body">
-      The alleys between buildings hold more light than they have a right to. Shot on the Minolta Hi-Matic 7s, this narrow laneway in the Brisbane CBD catches a blade of midday sun against century-old brick — the kind of geometry that only silver halide records faithfully.
+      Photographed by Tumas Agius
     </p>
     <div class="statement-meta">
       <div class="meta-item">
-        <span class="meta-value">135</span>
-        <span class="meta-label">Format</span>
+        <span class="meta-value">Ilford Delta 100 135</span>
+        <span class="meta-label">Film</span>
       </div>
       <div class="meta-item">
         <span class="meta-value">Hi-Matic 7s</span>
         <span class="meta-label">Camera</span>
       </div>
       <div class="meta-item">
+        <span class="meta-value">Brisbane, QLD</span>
+        <span class="meta-label">Location</span>
+      </div>
+      <!--<div class="meta-item">
         <span class="meta-value">NYT 1875</span>
         <span class="meta-label">Newspaper</span>
-      </div>
+      </div>-->
     </div>
   </div>
 </section>
