@@ -656,7 +656,8 @@
     font-size: clamp(2rem, 4vw, 3.5rem);
     font-weight: 400;
     font-style: italic;
-    color: var(--paper);
+    color: #800808;
+    text-shadow: 0 0 20px red;
     line-height: 1.2;
     margin-bottom: 2rem;
   }
@@ -673,17 +674,21 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2px;
-    border: 1px solid var(--dark-mid);
+    border: 1px solid #800808;
+    box-shadow: 0 0 10px #800808, 0 0 20px red;
     margin-top: 3rem;
   }
 
   .process-cell {
     padding: 2rem 1.5rem;
-    border-right: 1px solid var(--dark-mid);
+    border-right: 1px solid #800808;
+    box-shadow: 0 0 10px #800808, 0 0 20px red;
     text-align: left;
   }
 
-  .process-cell:last-child { border-right: none; }
+  .process-cell:last-child {
+    border-right: none;
+  }
 
   .process-num {
     font-family: 'Playfair Display', serif;
@@ -1017,8 +1022,8 @@
 
 <!-- About / Process -->
 <section class="about-section" id="process">
-  <p class="about-eyebrow">The work behind the work</p>
-  <h2 class="about-title">...</h2>
+  <p class="about-eyebrow">In the darkroom</p>
+  <h2 class="about-title">Composite Work</h2>
   <p class="about-body">
     ...
   </p>
@@ -1046,7 +1051,7 @@
 <!-- Minimal About -->
 <section style="padding: 3rem 3rem 6rem; max-width: 700px; margin: 0 auto; text-align: center;">
   <p style="font-family: 'Playfair Display', serif; font-size: 1.3rem; font-style: italic; color: var(--paper); line-height: 1.6; margin-bottom: 1.5rem;">
-    © 2025 Tumas Agius — Licensed under CC BY-NC-ND 4.0.<br>
+    © 2026 Tumas Agius — Licensed under CC BY-NC-ND 4.0.<br>
     Non-commercial use permitted with attribution. No derivatives allowed.
   </p>
   <p style="font-size: 0.62rem; color: var(--dark-mid); letter-spacing: 0.14em;">
